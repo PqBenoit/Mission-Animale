@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Neue-Light';
+  src: url('../fonts/HelveticaNeue-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Neue-Thin';
+  src: url('../fonts/HelveticaNeue-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Neue-UltraLight';
+  src: url('../fonts/HelveticaNeue-UltraLight.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Neue';
+  src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Neue-Light';
+  src: url('../fonts/HelveticaNeue-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Neue-Thin';
+  src: url('../fonts/HelveticaNeue-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Neue-UltraLight';
+  src: url('../fonts/HelveticaNeue-UltraLight.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Neue';
+  src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  font-family: 'Neue-UltraLight';
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+html body h1,
+html body h2,
+html body h3 {
+  margin: 0;
+}
+html body .black {
+  width: 100%;
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: fixed;
+  z-index: 900;
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+  font-family: 'Neue-Thin';
+}
+html body .black .container-fluid .navbar-collapse ul li {
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: 0.5px;
+}
+html body .black .container-fluid .navbar-collapse ul li a {
+  color: #222222;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+html body .black .container-fluid .navbar-collapse ul li:hover a {
+  color: #222222;
+  transition: 0.5s;
+}
+html body .black .container-fluid .navbar-collapse ul .current {
+  border-bottom: 1px solid #222222;
+}
+html body .black .container-fluid .navbar-collapse ul .current a {
+  color: #222222;
+}
+html body .white {
+  width: 100%;
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: fixed;
+  z-index: 900;
+  background-color: transparent;
+  border-color: transparent;
+  color: #222222;
+  font-family: 'Neue-Thin';
+}
+html body .white .container-fluid .navbar-collapse ul li {
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: 0.5px;
+}
+html body .white .container-fluid .navbar-collapse ul li a {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+html body .white .container-fluid .navbar-collapse ul li:hover a {
+  color: #222222;
+  transition: 0.5s;
+}
+html body .white .container-fluid .navbar-collapse ul .current {
+  border-bottom: 1px solid #222222;
+}
+html body .white .container-fluid .navbar-collapse ul .current a {
+  color: #222222;
+}
+html body #main {
+  width: 100%;
+  height: 500%;
+}
+html body #main .pages {
+  width: 100%;
+  height: 20%;
+}
+html body #main #page-1 {
+  color: #ffffff;
+  -webkit-background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
+  -moz-background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
+  -o-background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
+  background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
+  display: table;
+}
+html body #main #page-1 #title-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+html body #main #page-1 #title-container .col-md-6 {
+  padding: 0;
+}
+html body #main #page-1 #title-container #home-left {
+  height: 200px;
+  display: table;
+  text-align: right;
+}
+html body #main #page-1 #title-container #home-left .content {
+  padding-right: 25px;
+  display: table-cell;
+  vertical-align: middle;
+  border-right: solid #ffffff 1px;
+}
+html body #main #page-1 #title-container #home-left .content h1 {
+  font-family: 'Neue-Light';
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+html body #main #page-1 #title-container #home-right {
+  padding-left: 25px;
+  height: 200px;
+  display: table;
+  text-align: left;
+}
+html body #main #page-1 #title-container #home-right .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+html body #main #page-1 #title-container #home-right .content h3 {
+  margin: 6px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+html body #main #page-2 #title-2 {
+  top: width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+html body #main #page-5:target {
+  left: 0;
+  transiton: 2s;
+}

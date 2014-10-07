@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app='missionAnmialeApp'>
+
+	<head>
+		<link rel="stylesheet" href="styles/bootstrap.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="scripts/angular.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
+		
+	</head>
+
+	<body ng-controller='HeaderCtrl'>
+
+		<nav class="navbar navbar-default white" role="navigation" ng-init='current = 1'>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ng-click="current = 1" href="#">
+						<img src="img/logo-black-blue.png" alt="Mission Animale logo" width="271" height="40">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li ng-click="current = 1" ng-class='{"current" : current == 1}'>
+							<a href="#page-1" class="header-links">Accueil</a>
+						</li>
+						<li ng-click="current = 2" ng-class='{"current" : current == 2}'>
+							<a href="#page-2" class="header-links">Education</a>
+						</li>
+						<li ng-click="current = 3" ng-class='{"current" : current == 3}'>
+							<a href="#page-3" class="header-links">Balades &#38; Visites</a>
+						</li>
+						<li ng-click="current = 4" ng-class='{"current" : current == 4}'>
+							<a href="#page-4" class="header-links">Tarifs</a>
+						</li>
+						<li ng-click="current = 5" ng-class='{"current" : current == 5}'>
+							<a href="#page-5" class="header-links">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="main" ng-style="myStyle">
+
+			<div class="pages" id="page-1">
+				<div id="title-container">
+					<div class='col-md-6' id="home-left">
+						<div class="content">
+							<h1>Mission Animale</h1>
+							<h2>Services animaliers</h2>
+							<h2>&#201;ducatrice canin diplom&#233;e d'&#233;tat</h2>
+						</div>
+					</div>
+					<div class='col-md-6' id="home-right">
+						<div class='content'>
+							<h3>Cours d'&#233;ducation &#224; domicile</h3>
+							<h3>Conseill&#232;re en comportement canin</h3>
+							<h3>Conseils pour l'arriv&#233;e d'un chiot ou d'un chien</h3>
+							<h3>Balades simples, &#233;ducatives et collectives</h3>
+							<h3>Visites pour les chats et nacs</h3>
+							<h3>Pr&#233;vention dans les &#233;coles</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pages" id="page-2">
+				<div id="title-2">
+					<h2>&#201;ducation</h2>
+				</div>
+			</div>
+			<div class="pages" id="page-3">
+				<h1>Balades et visites</h1>
+			</div>
+			<div class="pages" id="page-4">
+				<h1>Tarifs</h1>
+			</div>
+			<div class="pages" id="page-5">
+				<h1>Contacts</h1>
+			</div>
+		</div>
+	</body>
+</html>
