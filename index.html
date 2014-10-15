@@ -2,6 +2,7 @@
 <html ng-app='missionAnmialeApp'>
 
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles/bootstrap.css">
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -9,7 +10,6 @@
 		<script type="text/javascript" src="scripts/bootstrap.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
 		<link rel="stylesheet" href="styles/main.css">
-		
 	</head>
 
 	<body ng-controller='HeaderCtrl'>
@@ -24,7 +24,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" ng-click="current = 1" href="#">
-						<img src="img/logo-black-blue.png" alt="Mission Animale logo" width="271" height="40">
+						<img src="img/logo-black-white.png" alt="Mission Animale logo" width="217" height="32" id="logo">
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,14 +53,14 @@
 
 			<div class="pages" id="page-1">
 				<div id="title-container">
-					<div class='col-md-6' id="home-left">
+					<div class='col-md-6 col-sm-10 col-xs-12' id="home-left">
 						<div class="content">
 							<h1>Mission Animale</h1>
 							<h2>Services animaliers</h2>
 							<h2>&#201;ducatrice canin diplom&#233;e d'&#233;tat</h2>
 						</div>
 					</div>
-					<div class='col-md-6' id="home-right">
+					<div class='col-md-6 col-sm-10 col-xs-12' id="home-right">
 						<div class='content'>
 							<h3>Cours d'&#233;ducation &#224; domicile</h3>
 							<h3>Conseill&#232;re en comportement canin</h3>
@@ -74,18 +74,77 @@
 			</div>
 
 			<div class="pages" id="page-2">
-				<div id="title-2">
+				<!-- <div id="title-2">
 					<h2>&#201;ducation</h2>
+				</div> -->
+				<div class="content-2 content-2-1 col-md-4 col-sm-4 col-xs-12">
+					<div class="title title-2-1">
+						<h3>Pr&#233;sentation</h3>
+					</div>
+					<div class="paragraphs paragraph-2-1">
+						<p>Unerdwear.com cotton candy pie sweet chocolate gummies. Dessert jelly macaroon fruitcake apple pie ice cream chocolate bar pie donut. Jelly donut biscuit sweet. Toffee wafer powder bear claw pudding jelly beans chocolate fruitcake sugar plum. Gummies pudding sweet cookie cotton candy wafer pudding dessert sesame snaps. Chocolate sesame snaps tootsie roll. Chupa chups chocolate bar donut. Bear claw gummi bears cotton candy sweet croissant fruitcake. Sweet sugar plum lemon drops jelly beans chocolate bar.</p>
+					</div>
+				</div>
+				<div class="content-2 content-2-2 col-md-8 col-sm-8 col-xs-12">
+					<div class="title title-2-2">
+						<h3>Autres services</h3>
+					</div>
+
+					<div class="paragraphs paragraph-2-2">
+						<h4>Un accompagnement pour le choix et/ou l'arrivée d'un chiot/chien</h4>
+						<p>vous désirez avoir un chien depuis longtemps mais vous n'arrivez pas à faire un choix? ou l'acheter?
+						vous ne savez pas comment l'accueillir au mieux?
+						Mission Animale vous propose ses services pour vous aider dans le choix de la race en fonction de votre mode de vie, votre environnement, vos attentes ... l'achat d'un chien ne se réalise pas seulement au coup de coeur!!!
+						Mission Animale vous propose également son aide pour accueillir votre nouveau compagnon chez vous et que tout se passe au mieux pour lui et vous. Certaines règles de base sont à mettre en place dès l'arrivée du chiot/chien . Je vous expliquerais donc les bons comportements à adopter et répondrais à toutes vos questions .</p>
+						<h4>Des ateliers "prévention morsures"</h4>
+						<p>Ces ateliers sont généralement destinés aux écoles et ont pour but d'informer les enfants sur les bons comportements à adopter avec les chiens et les initier au langage canin. Nous aborderons différents thèmes de façon ludique et adaptés au public!</p>
+					</div>
+				</div>
+				<div class="content-2 content-2-3 col-md-12 col-sm-12 col-xs-12">
+					<div class="title title-2-3">
+						<h3>Les cours</h3>
+					</div>
+					<div class="paragraphs paragraph-2-3">
+						<h4>Partir de la bonne patte!</h4>
+						<p>Avant de commencer le travail, un devis* sera réalisé afin de mettre en place un protocole de travail pour répondre au mieux à vos attentes.</br>Problème du comportement ou éducation de base, je me déplace à votre domicile lors du premier rendez-vous. Je peux ainsi observer l'environnement dans lequel évolue votre chien et comment il se comporte.</p>
+						<h4>Les cours à domicile</h4>
+						<p>Nous commencerons le travail chez vous ou dans votre quartier, dans un espace connu du chien pour éviter qu'il soit distrait. Ensuite, en fonction du travail, nous pourrons continuer les exercices dans d'autres lieux inconnus ou viendrons s'ajouter de nouvelles stimulations.</p>
+						<h4>Comment travailler</h4>
+						<p>Le protocole mis en place et ma technique de travail est adapté à votre chien en fonction de son âge, son tempérament, sa race ... Je vais vous apprendre à adopter une bonne gestuelle, à placer votre voix et savoir observer ses postures. Comment récompenser, comment punir, il est important de rester cohérent et calme pour apprendre quoi que ce soit à votre chien. Vous l'aurez compris, vous devrez tout autant travailler que LUI !!! Mon travail consiste avant tout, à vous donner toutes les clés en mains pour que la cohabitation se passe au mieux selon vos règles, tout en respectant le bien- être de votre chien!</p>
+						<h4>Garantis de résultat:</h4>
+						<p>Lors du devis , un nombre de séances sont fixées pour atteindre vos objectifs. Arrivé à terme si celui-ci n'est pas atteint, je m'engage à continuer à mes frais les leçons supplémentaires.</p>
+					</div>
 				</div>
 			</div>
 			<div class="pages" id="page-3">
-				<h1>Balades et visites</h1>
+				<div class="balades col-md-6 col-sm-12 col-xs-12">
+					<h2>Balades</h2>
+					<div class="content-3">
+						<h3>Simples</h3>
+						<p>Si vous n'avez pas le temps de sortir votre chien dans la journée, Mission Animale  s'en occupe! Promenade utile pour la socialisation et l'hygiène de votre chien. Ballade d'une demie heure ou d'une heure.</p>
+						<h3>Educatives</h3>
+						<p>Pendant une heure nous alternerons entre le jeux et des exercices d'éducation. Votre chien peut être promené dans votre quartier pendant une heure ou alors aux bois pendant deux heures minimum. Pour les chiots (jusqu'à 5-6 mois). Ces promenades sont principalement axées sur sa socialisation, il est important de lui faire découvrir un maximum de choses (différents bruits, différentes odeurs, matières...) pendant ses premiers mois. Ces ballades peuvent se dérouler avec ou sans les maîtres et durent entre 1H et 1H30.</p>
+						<h3>Collectives</h3>
+						<p>Groupe de 5 chiens maximum, répartis selon les âges et leur taille. Ballade d'une heure avec les maîtres. Nous alternerons le jeux et des exercices d'éducation dans des lieux différents .</p>
+					</div>
+				</div>
+				<div class="visites col-md-6 col-sm-12 col-xs-12">
+					<h2>Visites</h2>
+					<div class="content-3">
+						<h3>Simples</h3>
+						<p>Si vous n'avez pas le temps de sortir votre chien dans la journée, Mission Animale  s'en occupe! Promenade utile pour la socialisation et l'hygiène de votre chien. Ballade d'une demie heure ou d'une heure.</p>
+						<h3>Educatives</h3>
+						<p>Pendant une heure nous alternerons entre le jeux et des exercices d'éducation. Votre chien peut être promené dans votre quartier pendant une heure ou alors aux bois pendant deux heures minimum. Pour les chiots (jusqu'à 5-6 mois). Ces promenades sont principalement axées sur sa socialisation, il est important de lui faire découvrir un maximum de choses (différents bruits, différentes odeurs, matières...) pendant ses premiers mois. Ces ballades peuvent se dérouler avec ou sans les maîtres et durent entre 1H et 1H30.</p>
+						<h3>Collectives</h3>
+						<p>Groupe de 5 chiens maximum, répartis selon les âges et leur taille. Ballade d'une heure avec les maîtres. Nous alternerons le jeux et des exercices d'éducation dans des lieux différents .</p>
+					</div>
+				</div>
 			</div>
 			<div class="pages" id="page-4">
-				<h1>Tarifs</h1>
+				<h2>Tarifs</h2>
 			</div>
 			<div class="pages" id="page-5">
-				<h1>Contacts</h1>
+				<h2>Contacts</h2>
 			</div>
 		</div>
 	</body>
