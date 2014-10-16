@@ -12,7 +12,7 @@
           var x, y;
           y = $(this).scrollTop();
           x = $("#page-2").offset().top;
-          if (y >= x) {
+          if (y >= 2 * x) {
             $('#logo').attr('src', 'img/logo-black-blue.png');
             header.removeClass('white').addClass('black');
             console.log(y);
@@ -25,14 +25,14 @@
           $(target).addClassName('.current');
           return false;
         });
-        $('a[href^="#"]').click(function() {
+        $('span[href^="#"]').click(function() {
           var target, width;
           target = $(this).attr('href');
           width = $(target).offset().top;
           console.log(target);
           $('html, body').animate({
             scrollTop: width
-          }, 750);
+          }, 1000);
           $(target).addClassName('.current');
           return false;
         });

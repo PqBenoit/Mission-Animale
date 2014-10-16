@@ -58,24 +58,29 @@ html body .black {
   color: #ffffff;
   font-family: 'Neue-Thin';
 }
+html body .black .container-fluid .navbar-collapse ul {
+  float: right;
+}
 html body .black .container-fluid .navbar-collapse ul li {
-  margin-right: 15px;
-  margin-left: 15px;
+  font-size: 20px;
+  font-family: 'Neue-Ultralight';
+  margin: 25px;
+  padding-bottom: 10px;
   transition: 0.5px;
 }
-html body .black .container-fluid .navbar-collapse ul li a {
+html body .black .container-fluid .navbar-collapse ul li span {
   color: #222222;
   font-weight: 300;
   letter-spacing: 1px;
 }
-html body .black .container-fluid .navbar-collapse ul li:hover a {
+html body .black .container-fluid .navbar-collapse ul li:hover span {
   color: #222222;
   transition: 0.5s;
 }
 html body .black .container-fluid .navbar-collapse ul .current {
   border-bottom: 1px solid #222222;
 }
-html body .black .container-fluid .navbar-collapse ul .current a {
+html body .black .container-fluid .navbar-collapse ul .current span {
   color: #222222;
 }
 html body .white {
@@ -90,24 +95,29 @@ html body .white {
   color: #222222;
   font-family: 'Neue-Thin';
 }
+html body .white .container-fluid .navbar-collapse ul {
+  float: right;
+}
 html body .white .container-fluid .navbar-collapse ul li {
-  margin-right: 15px;
-  margin-left: 15px;
+  font-size: 20px;
+  font-family: 'Neue-Ultralight';
+  margin: 25px;
+  padding-bottom: 10px;
   transition: 0.5px;
 }
-html body .white .container-fluid .navbar-collapse ul li a {
+html body .white .container-fluid .navbar-collapse ul li span {
   color: #ffffff;
   font-weight: 300;
   letter-spacing: 1px;
 }
-html body .white .container-fluid .navbar-collapse ul li:hover a {
+html body .white .container-fluid .navbar-collapse ul li:hover span {
   color: #222222;
   transition: 0.5s;
 }
 html body .white .container-fluid .navbar-collapse ul .current {
   border-bottom: 1px solid #222222;
 }
-html body .white .container-fluid .navbar-collapse ul .current a {
+html body .white .container-fluid .navbar-collapse ul .current span {
   color: #222222;
 }
 html body #main {

@@ -4,6 +4,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="styles/demo.css" />
+		<link rel="stylesheet" type="text/css" href="styles/component.css" />
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="scripts/angular.js"></script>
@@ -30,19 +33,19 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li ng-click="current = 1" ng-class='{"current" : current == 1}'>
-							<a href="#page-1" class="header-links">Accueil</a>
+							<span href="#page-1" class="header-links">Accueil</span>
 						</li>
 						<li ng-click="current = 2" ng-class='{"current" : current == 2}'>
-							<a href="#page-2" class="header-links">Education</a>
+							<span href="#page-2" class="header-links">Education</span>
 						</li>
 						<li ng-click="current = 3" ng-class='{"current" : current == 3}'>
-							<a href="#page-3" class="header-links">Balades &#38; Visites</a>
+							<span href="#page-3" class="header-links">Balades &#38; Visites</span>
 						</li>
 						<li ng-click="current = 4" ng-class='{"current" : current == 4}'>
-							<a href="#page-4" class="header-links">Tarifs</a>
+							<span href="#page-4" class="header-links">Tarifs</span>
 						</li>
 						<li ng-click="current = 5" ng-class='{"current" : current == 5}'>
-							<a href="#page-5" class="header-links">Contacts</a>
+							<span href="#page-5" class="header-links">Contacts</span>
 						</li>
 					</ul>
 				</div>
@@ -74,18 +77,48 @@
 			</div>
 
 			<div class="pages" id="page-2">
+				<div class="grid left">
+					<figure class="effect-lily">
+						<img src="img/1.jpg" alt="img01"/>
+						<figcaption>
+							<h2>Les <span> Cours</span></h2>
+							<p>Partir de la bonne patte!</p>
+						<p>Avant de commencer le travail, un devis* sera réalisé afin de mettre en place un protocole de travail pour répondre au mieux à vos attentes.</br>Problème du comportement ou éducation de base, je me déplace à votre domicile lors du premier rendez-vous. Je peux ainsi observer l'environnement dans lequel évolue votre chien et comment il se comporte.</p>
+						<p>Les cours à domicile</p>
+						<p>Nous commencerons le travail chez vous ou dans votre quartier, dans un espace connu du chien pour éviter qu'il soit distrait. Ensuite, en fonction du travail, nous pourrons continuer les exercices dans d'autres lieux inconnus ou viendrons s'ajouter de nouvelles stimulations.</p>
+						<p>Comment travailler</p>
+						<p>Le protocole mis en place et ma technique de travail est adapté à votre chien en fonction de son âge, son tempérament, sa race ... Je vais vous apprendre à adopter une bonne gestuelle, à placer votre voix et savoir observer ses postures. Comment récompenser, comment punir, il est important de rester cohérent et calme pour apprendre quoi que ce soit à votre chien. Vous l'aurez compris, vous devrez tout autant travailler que LUI !!! Mon travail consiste avant tout, à vous donner toutes les clés en mains pour que la cohabitation se passe au mieux selon vos règles, tout en respectant le bien- être de votre chien!</p>
+						<p>Garantis de résultat:</p>
+						<p>Lors du devis , un nombre de séances sont fixées pour atteindre vos objectifs. Arrivé à terme si celui-ci n'est pas atteint, je m'engage à continuer à mes frais les leçons supplémentaires.</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-sadie">
+						<img src="img/2.jpg" alt="img02"/>
+						<figcaption>
+							<h2>Pr&#233;sentation</h2>
+							<p>Unerdwear.com cotton candy pie sweet chocolate gummies. Dessert jelly macaroon fruitcake apple pie ice cream chocolate bar pie donut. Jelly donut biscuit sweet. Toffee wafer powder bear claw pudding jelly beans chocolate fruitcake sugar plum. Gummies pudding sweet cookie cotton candy wafer pudding dessert sesame snaps. Chocolate sesame snaps tootsie roll. Chupa chups chocolate bar donut. Bear claw gummi bears cotton candy sweet croissant fruitcake. Sweet sugar plum lemon drops jelly beans chocolate bar.</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-honey">
+						<img src="img/3.jpg" alt="img07"/>
+						<figcaption>
+							<h2>Dreamy <span>Honey</span> <i>Now</i></h2>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
 				<!-- <div id="title-2">
 					<h2>&#201;ducation</h2>
 				</div> -->
-				<div class="content-2 content-2-1 col-md-4 col-sm-4 col-xs-12">
+<!-- 				<div class="content-2 content-2-1 col-md-4 col-sm-4 col-xs-12">
 					<div class="title title-2-1">
 						<h3>Pr&#233;sentation</h3>
 					</div>
 					<div class="paragraphs paragraph-2-1">
 						<p>Unerdwear.com cotton candy pie sweet chocolate gummies. Dessert jelly macaroon fruitcake apple pie ice cream chocolate bar pie donut. Jelly donut biscuit sweet. Toffee wafer powder bear claw pudding jelly beans chocolate fruitcake sugar plum. Gummies pudding sweet cookie cotton candy wafer pudding dessert sesame snaps. Chocolate sesame snaps tootsie roll. Chupa chups chocolate bar donut. Bear claw gummi bears cotton candy sweet croissant fruitcake. Sweet sugar plum lemon drops jelly beans chocolate bar.</p>
 					</div>
-				</div>
-				<div class="content-2 content-2-2 col-md-8 col-sm-8 col-xs-12">
+				</div> -->
+				<!-- <div class="content-2 content-2-2 col-md-8 col-sm-8 col-xs-12">
 					<div class="title title-2-2">
 						<h3>Autres services</h3>
 					</div>
@@ -99,8 +132,8 @@
 						<h4>Des ateliers "prévention morsures"</h4>
 						<p>Ces ateliers sont généralement destinés aux écoles et ont pour but d'informer les enfants sur les bons comportements à adopter avec les chiens et les initier au langage canin. Nous aborderons différents thèmes de façon ludique et adaptés au public!</p>
 					</div>
-				</div>
-				<div class="content-2 content-2-3 col-md-12 col-sm-12 col-xs-12">
+				</div> -->
+				<!-- <div class="content-2 content-2-3 col-md-12 col-sm-12 col-xs-12">
 					<div class="title title-2-3">
 						<h3>Les cours</h3>
 					</div>
@@ -114,7 +147,7 @@
 						<h4>Garantis de résultat:</h4>
 						<p>Lors du devis , un nombre de séances sont fixées pour atteindre vos objectifs. Arrivé à terme si celui-ci n'est pas atteint, je m'engage à continuer à mes frais les leçons supplémentaires.</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="pages" id="page-3">
 				<div class="balades col-md-6 col-sm-12 col-xs-12">
