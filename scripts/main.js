@@ -6,30 +6,51 @@
   missionAnmialeApp.controller('HeaderCtrl', [
     '$scope', function($scope) {
       return $(document).ready(function() {
-        var header;
+        var header, x;
         header = $(".navbar-default");
+        x = $("#page-2").offset().top;
+        header.hide();
         $(window).scroll(function() {
-          var x, y;
+          var y;
           y = $(this).scrollTop();
-          x = $("#page-2").offset().top;
+          if (y >= x) {
+            header.fadeIn();
+            header.css('position', 'fixed');
+          } else {
+            header.fadeOut();
+          }
           if (y >= 2 * x) {
             $('#logo').attr('src', 'img/logo-black-blue.png');
             header.removeClass('white').addClass('black');
-            console.log(y);
             return false;
           } else {
             header.removeClass('black').addClass('white');
             $('#logo').attr('src', 'img/logo-black-white.png');
             return false;
           }
+        });
+        $('.scroller').click(function() {
+          var width;
+          width = x;
+          $('html, body').animate({
+            scrollTop: width
+          }, 1000);
           $(target).addClassName('.current');
+          return false;
+        });
+        $('.accueil').click(function() {
+          var target, width;
+          target = '#page-1';
+          width = 0;
+          $('html, body').animate({
+            scrollTop: width
+          }, 1000);
           return false;
         });
         $('span[href^="#"]').click(function() {
           var target, width;
           target = $(this).attr('href');
           width = $(target).offset().top;
-          console.log(target);
           $('html, body').animate({
             scrollTop: width
           }, 1000);

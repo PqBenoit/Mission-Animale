@@ -2,7 +2,9 @@
 <html ng-app='missionAnmialeApp'>
 
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="styles/demo.css" />
@@ -17,7 +19,7 @@
 
 	<body ng-controller='HeaderCtrl'>
 
-		<nav class="navbar navbar-default white" role="navigation" ng-init='current = 1'>
+		<nav class="navbar navbar-default white" role="navigation" ng-init='current = 2'>
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -26,20 +28,20 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" ng-click="current = 1" href="#">
-						<img src="img/logo-black-white.png" alt="Mission Animale logo" width="217" height="32" id="logo">
+					<a class="navbar-brand" ng-click="current = 1" href="#page-1">
+						<img src="img/logo-black-white.png" alt="Mission Animale logo" width="217" height="32" id="logo" class="header-logo accueil">
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li ng-click="current = 1" ng-class='{"current" : current == 1}'>
-							<span href="#page-1" class="header-links">Accueil</span>
+						<li ng-click="current = 1" ng-class='{"current" : current == 1}' id='page-1'>
+							<span class="header-links accueil">Accueil</span>
 						</li>
-						<li ng-click="current = 2" ng-class='{"current" : current == 2}'>
+						<li ng-click="current = 2" ng-class='{"current" : current == 2}' id="li-page-2">
 							<span href="#page-2" class="header-links">Education</span>
 						</li>
-						<li ng-click="current = 3" ng-class='{"current" : current == 3}'>
-							<span href="#page-3" class="header-links">Balades &#38; Visites</span>
+						<li ng-click="current = 3" ng-class='{"current" : current == 3}' id="li-page-3">
+							<span href="#page-3" class="header-links">Balades & Visites</span>
 						</li>
 						<li ng-click="current = 4" ng-class='{"current" : current == 4}'>
 							<span href="#page-4" class="header-links">Tarifs</span>
@@ -53,25 +55,19 @@
 		</nav>
 
 		<div id="main" ng-style="myStyle">
-
-			<div class="pages" id="page-1">
-				<div id="title-container">
-					<div class='col-md-6 col-sm-10 col-xs-12' id="home-left">
-						<div class="content">
-							<h1>Mission Animale</h1>
-							<h2>Services animaliers</h2>
-							<h2>&#201;ducatrice canin diplom&#233;e d'&#233;tat</h2>
+			<div class="container page-1 pages">
+				<div class="row">
+					<div class="page-1-container col-md-6 col-md-offset-3">
+						<p>SERVICE <span>ANIMALIER</span>, </br> ÉDUCATRICE DIPLOMÉE D'ÉTAT</p>
+						<div class="line"></div>
+						<div class="logo">
+							<img src="img/logo-black-blue-ultra.png">
 						</div>
 					</div>
-					<div class='col-md-6 col-sm-10 col-xs-12' id="home-right">
-						<div class='content'>
-							<h3>Cours d'&#233;ducation &#224; domicile</h3>
-							<h3>Conseill&#232;re en comportement canin</h3>
-							<h3>Conseils pour l'arriv&#233;e d'un chiot ou d'un chien</h3>
-							<h3>Balades simples, &#233;ducatives et collectives</h3>
-							<h3>Visites pour les chats et nacs</h3>
-							<h3>Pr&#233;vention dans les &#233;coles</h3>
-						</div>
+				</div>
+				<div class="scroll">
+					<div class="scroller">
+						
 					</div>
 				</div>
 			</div>
@@ -99,55 +95,20 @@
 							<p>Unerdwear.com cotton candy pie sweet chocolate gummies. Dessert jelly macaroon fruitcake apple pie ice cream chocolate bar pie donut. Jelly donut biscuit sweet. Toffee wafer powder bear claw pudding jelly beans chocolate fruitcake sugar plum. Gummies pudding sweet cookie cotton candy wafer pudding dessert sesame snaps. Chocolate sesame snaps tootsie roll. Chupa chups chocolate bar donut. Bear claw gummi bears cotton candy sweet croissant fruitcake. Sweet sugar plum lemon drops jelly beans chocolate bar.</p>
 						</figcaption>			
 					</figure>
-					<figure class="effect-honey">
+					<figure class="effect-sarah">
 						<img src="img/3.jpg" alt="img07"/>
 						<figcaption>
-							<h2>Dreamy <span>Honey</span> <i>Now</i></h2>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-				</div>
-				<!-- <div id="title-2">
-					<h2>&#201;ducation</h2>
-				</div> -->
-<!-- 				<div class="content-2 content-2-1 col-md-4 col-sm-4 col-xs-12">
-					<div class="title title-2-1">
-						<h3>Pr&#233;sentation</h3>
-					</div>
-					<div class="paragraphs paragraph-2-1">
-						<p>Unerdwear.com cotton candy pie sweet chocolate gummies. Dessert jelly macaroon fruitcake apple pie ice cream chocolate bar pie donut. Jelly donut biscuit sweet. Toffee wafer powder bear claw pudding jelly beans chocolate fruitcake sugar plum. Gummies pudding sweet cookie cotton candy wafer pudding dessert sesame snaps. Chocolate sesame snaps tootsie roll. Chupa chups chocolate bar donut. Bear claw gummi bears cotton candy sweet croissant fruitcake. Sweet sugar plum lemon drops jelly beans chocolate bar.</p>
-					</div>
-				</div> -->
-				<!-- <div class="content-2 content-2-2 col-md-8 col-sm-8 col-xs-12">
-					<div class="title title-2-2">
-						<h3>Autres services</h3>
-					</div>
-
-					<div class="paragraphs paragraph-2-2">
-						<h4>Un accompagnement pour le choix et/ou l'arrivée d'un chiot/chien</h4>
+							<h2>Autres services</h2>
+							<p>Un accompagnement pour le choix et/ou l'arrivée d'un chiot/chien</p>
 						<p>vous désirez avoir un chien depuis longtemps mais vous n'arrivez pas à faire un choix? ou l'acheter?
 						vous ne savez pas comment l'accueillir au mieux?
 						Mission Animale vous propose ses services pour vous aider dans le choix de la race en fonction de votre mode de vie, votre environnement, vos attentes ... l'achat d'un chien ne se réalise pas seulement au coup de coeur!!!
 						Mission Animale vous propose également son aide pour accueillir votre nouveau compagnon chez vous et que tout se passe au mieux pour lui et vous. Certaines règles de base sont à mettre en place dès l'arrivée du chiot/chien . Je vous expliquerais donc les bons comportements à adopter et répondrais à toutes vos questions .</p>
-						<h4>Des ateliers "prévention morsures"</h4>
+						<p>Des ateliers "prévention morsures"</p>
 						<p>Ces ateliers sont généralement destinés aux écoles et ont pour but d'informer les enfants sur les bons comportements à adopter avec les chiens et les initier au langage canin. Nous aborderons différents thèmes de façon ludique et adaptés au public!</p>
-					</div>
-				</div> -->
-				<!-- <div class="content-2 content-2-3 col-md-12 col-sm-12 col-xs-12">
-					<div class="title title-2-3">
-						<h3>Les cours</h3>
-					</div>
-					<div class="paragraphs paragraph-2-3">
-						<h4>Partir de la bonne patte!</h4>
-						<p>Avant de commencer le travail, un devis* sera réalisé afin de mettre en place un protocole de travail pour répondre au mieux à vos attentes.</br>Problème du comportement ou éducation de base, je me déplace à votre domicile lors du premier rendez-vous. Je peux ainsi observer l'environnement dans lequel évolue votre chien et comment il se comporte.</p>
-						<h4>Les cours à domicile</h4>
-						<p>Nous commencerons le travail chez vous ou dans votre quartier, dans un espace connu du chien pour éviter qu'il soit distrait. Ensuite, en fonction du travail, nous pourrons continuer les exercices dans d'autres lieux inconnus ou viendrons s'ajouter de nouvelles stimulations.</p>
-						<h4>Comment travailler</h4>
-						<p>Le protocole mis en place et ma technique de travail est adapté à votre chien en fonction de son âge, son tempérament, sa race ... Je vais vous apprendre à adopter une bonne gestuelle, à placer votre voix et savoir observer ses postures. Comment récompenser, comment punir, il est important de rester cohérent et calme pour apprendre quoi que ce soit à votre chien. Vous l'aurez compris, vous devrez tout autant travailler que LUI !!! Mon travail consiste avant tout, à vous donner toutes les clés en mains pour que la cohabitation se passe au mieux selon vos règles, tout en respectant le bien- être de votre chien!</p>
-						<h4>Garantis de résultat:</h4>
-						<p>Lors du devis , un nombre de séances sont fixées pour atteindre vos objectifs. Arrivé à terme si celui-ci n'est pas atteint, je m'engage à continuer à mes frais les leçons supplémentaires.</p>
-					</div>
-				</div> -->
+						</figcaption>			
+					</figure>
+				</div>
 			</div>
 			<div class="pages" id="page-3">
 				<div class="balades col-md-6 col-sm-12 col-xs-12">
