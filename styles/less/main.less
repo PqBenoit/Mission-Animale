@@ -122,6 +122,62 @@ html {
 					}
 				}
 			}
+
+		}
+
+		.black-white {
+			width: 100%;
+			margin: 0;
+			padding-left: 5%;
+			padding-right: 5%;
+			position: fixed;
+			z-index: 900;
+			background-color: transparent;
+			border-color: transparent;
+			color: #222222;
+			font-family: 'Neue-Thin';
+
+			.container-fluid {
+
+				.navbar-collapse {
+
+					ul {
+						float: right;
+
+						li {
+							font-size: 20px;
+							font-family: 'Neue-Ultralight';
+							margin: 25px;
+							padding-bottom: 10px;
+
+							span {
+								color: #ffffff;
+								font-weight: 300;
+								letter-spacing: 1px;
+							}
+
+							transition: 0.5px;
+						}
+
+						li:hover {
+
+							span {
+								cursor: pointer;
+								color: #ffffff;
+								transition: 0.5s;
+							}
+						}
+
+						.current {
+							border-bottom: 1px solid #ffffff;
+							
+							span {
+								color: #ffffff;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		
@@ -129,6 +185,19 @@ html {
 			width: 100%;
 			height: 500%;
 			// background: url('../img/bg-main.jpg');
+			.background {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				background-size: cover;
+			}
+
+			.white-background {
+				position: absolute;
+
+			}
 
 			.pages {
 				width: 100%;
@@ -144,8 +213,7 @@ html {
 				// -moz-background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
 				// -o-background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
 				// background: radial-gradient(circle at bottom right, #9cd2ed, #3c9cec);
-				background-image: url('../img/bg-1.jpg');
-				background-size: cover;
+				
 				display: table;
 				
 				.row {
@@ -154,6 +222,9 @@ html {
 					
 					.page-1-container {
 						text-align: center;
+						position: relative;
+
+
 
 						p {
 							font-size: 2.5em;
@@ -162,7 +233,7 @@ html {
 						}
 
 						span {
-							color: #5ba8c0;
+							color: #00a3e8;
 						}
 						
 						.line {
@@ -205,81 +276,23 @@ html {
 					}
 
 				}
-				
-				// .scroller {
-				// 	position: absolute;
-				// 	bottom: 0;
-				// 	left: 49%;
-				// 	width: 60px;
-				// 	height: 60px;
-
-				// 	span {
-				// 		width: 100%;
-				// 		height: 100%;
-
-				// 		a {
-				// 			width: 100%;
-				// 			height: 100%;
-				// 			background-image: url(../img/scroll_down.png);
-				// 		}
-				// 	}
-				
-				// 	display: table-cell;
-				// 	vertical-align: middle;
-
-				// 	.logo, .line {
-				// 		width: 100%;
-				// 		text-align: center;
-				// 	}
-
-				// 	.line {
-				// 		height: 1px;
-				// 		background-color: #fff;
-				// 	}
-
-					// .col-md-6 {
-					// 	padding: 0;
-					// }
-
-					// #home-left {
-					// 	height: 200px;
-					// 	display: table;
-					// 	text-align: right;
-						
-					// 	.content {
-					// 		padding-right: 25px;
-					// 		display: table-cell;
-					// 		vertical-align: middle;
-					// 		border-right: solid #ffffff 1px;
-
-					// 		h1 {
-					// 			font-family: 'Neue-Light';
-					// 			font-size: 50px;
-					// 			margin-bottom: 20px;
-					// 		}
-					// 	}
-					// }
-
-					// #home-right {
-					// 	padding-left: 25px;
-					// 	height: 200px;
-					// 	display: table;
-					// 	text-align: left;
-						
-					// 	.content {
-					// 		display: table-cell;
-					// 		vertical-align: middle;
-					// 		h3 {
-					// 			margin: 6px;
-					// 			font-size: 20px;
-					// 			letter-spacing: 1px;
-					// 		}
-					// 	}
-					// }
-				
 			}
 
 			#page-2 {
+
+				.grid {
+					figure {
+						display: block;
+					}
+
+					.effect-sadie {
+						border-bottom: solid 2px #fff;
+					}
+
+					.effect-lily {
+						border-left: solid 2px #fff;
+					}
+				}
 				#title-2 {
 					width: 30%;
 					margin: 0 auto;
@@ -318,7 +331,27 @@ html {
 			}
 
 			#page-3 {
-				padding-top: 125px;
+
+				.visites {
+					border-left: solid 2px #fff;
+				}
+				
+				.balades, .visites {
+					color: #fff;
+					padding-top: 125px;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.3);
+					webkit-transition: all 1s ease;
+						-moz-transition: all 1s ease;
+						-o-transition: all 1s ease;
+						-ms-transition: all 1s ease;
+						transition: all 1s ease;
+				}
+
+				.balades:hover, .visites:hover {
+					background-color: rgba(0, 0, 0, 0);
+					cursor: pointer;
+				}
 
 				h2 {
 					text-align: center;
@@ -328,16 +361,24 @@ html {
 				}
 
 				.content-3 {
-					padding: 7%;
+					padding: 5%;
 
 					@media (max-width:768px) {
 						padding: 2%;
 					}
 				}
+
+				.balades-content {
+					width: 78%;
+				}
 			}
 
 			#page-4 {
-				
+				.page-4-container{
+					width: 100%;
+					height: 100%;
+					background-color: white;
+				}
 			}
 
 			#page-5 {

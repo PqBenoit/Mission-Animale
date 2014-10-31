@@ -9,6 +9,8 @@
         var header, x;
         header = $(".navbar-default");
         x = $("#page-2").offset().top;
+        $(".background").css("background-image", "url('img/bg-2.jpg')");
+        $(".background").css("background-size", "cover");
         header.hide();
         $(window).scroll(function() {
           var y;
@@ -16,12 +18,13 @@
           if (y >= x) {
             header.fadeIn();
             header.css('position', 'fixed');
+            $(".background").css("background-image", "url('img/bg-3.jpg')");
           } else {
             header.fadeOut();
+            $(".background").css("background-image", "url('img/bg-2.jpg')");
           }
           if (y >= 2 * x) {
-            $('#logo').attr('src', 'img/logo-black-blue.png');
-            header.removeClass('white').addClass('black');
+            header.removeClass('black').addClass('black-white');
             return false;
           } else {
             header.removeClass('black').addClass('white');
