@@ -23,13 +23,14 @@ missionAnmialeApp.controller 'HeaderCtrl', [ '$scope', ($scope) ->
 				$(".background").css("background-image", "url('img/bg-2.jpg')")
 
 			if y >= 2*x
-				header.removeClass('black').addClass('black-white')
+				$('#logo').attr('src', 'img/logo-black-blue.png')
+				header.removeClass('black-white').addClass('white')
+
 				return false
 			else
-				header.removeClass('black').addClass('white')
+				header.removeClass('white').addClass('black-white')
 				$('#logo').attr('src', 'img/logo-black-white.png')				
 				return false
-
 		
 
 		$('.scroller').click ->

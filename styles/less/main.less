@@ -95,7 +95,7 @@ html {
 							padding-bottom: 10px;
 
 							span {
-								color: #ffffff;
+								color: #222222;
 								font-weight: 300;
 								letter-spacing: 1px;
 							}
@@ -349,19 +349,36 @@ html {
 				}
 
 				.balades:hover, .visites:hover {
-					background-color: rgba(0, 0, 0, 0);
+					background-color: rgba(0, 0, 0, 0.5);
 					cursor: pointer;
 				}
 
 				h2 {
 					text-align: center;
 					font-family: 'Neue-Light';
-					font-size: 32px;
+					width: 40%;
+					margin: 0 auto;
+					font-size: 62px;
 					margin-bottom: 30px;
 				}
 
 				.content-3 {
 					padding: 5%;
+
+					h3 {
+						font-family: 'Neue-Light';
+						font-size: 36px;
+						color: #00a3e8;
+						width: 100%;
+					}
+
+					.h3-right {
+						text-align: right;
+					}
+
+					p {
+						margin-bottom: 50px; 
+					}
 
 					@media (max-width:768px) {
 						padding: 2%;
@@ -369,7 +386,12 @@ html {
 				}
 
 				.balades-content {
-					width: 78%;
+					width: 70%;
+				}
+
+				.visites-content {
+					width: 70%;
+					float: right;
 				}
 			}
 
