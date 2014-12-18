@@ -184,20 +184,111 @@
 			</div>
 			<div class="pages" id="page-4">
 				<div class="col-md-12 page-4-container">
-					<p>SERVICE <span>ANIMALIER</span>, </br> ÉDUCATRICE DIPLOMÉE D'ÉTAT</p>
-					<div class="line"></div>
-					<div class="logo">
-						<img src="img/logo-black-blue-ultra.png">
+					<div class="col-md-4">
+						<table class="table table-bordered visites-table">
+							<caption>Visites</caption>
+							<tr>
+								<th></th>
+								<th>Chats 1h</th>
+								<th>Nacs 40mn</th>
+							</tr>
+							<tr>
+								<td>1 visite</td>
+								<td>20€</td>
+								<td>17€</td>
+							</tr>
+							<tr>
+								<td>5 visites à répartir</td>
+								<td>95€</td>
+								<td>75€</td>
+							</tr>
+							<tr>
+								<td>10 visites à repartir</td>
+								<td>180€</td>
+								<td>155€</td>
+							</tr>
+							<tr>
+								<td>1 semaine</td>
+								<td>125€</td>
+								<td>110€</td>
+							</tr>
+							<tr>
+								<td>2 semaines</td>
+								<td>225€</td>
+								<td>210€</td>
+							</tr>
+						</table>
 					</div>
-				</div>
-				<div class="scroll">
-					<div class="scroller">
-						
+					<div class="col-md-4">
+						<table class="table table-bordered balades-table">
+							<caption>Balades</caption>
+							<tr>
+								<th></th>
+								<th>30mn</th>
+								<th>1h</th>
+							</tr>
+							<tr>
+								<td><b>Balades simple</b></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>1 balade</td>
+								<td>15€</td>
+								<td>20€</td>
+							</tr>
+							<tr>
+								<td>5 balades</td>
+								<td>65€</td>
+								<td>90€</td>
+							</tr>
+							<tr>
+								<td>10 balades</td>
+								<td>125€</td>
+								<td>160€</td>
+							</tr>
+							<tr>
+								<td><b>Balade éducative</b></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>1 balade</td>
+								<td></td>
+								<td>30€</td>
+							</tr>
+							<tr>
+								<td>5 balades</td>
+								<td></td>
+								<td>140€</td>
+							</tr>
+							<tr>
+								<td>10 balades</td>
+								<td></td>
+								<td>260€</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-4">
+						<table class="table table-bordered education-table">
+							<caption>Éducation</caption>
+							<tr>
+								<th>
+									Devis personnalisé sur rendez-vous
+								</th>
+								<th>
+									20€ déduits si le contrat est signé
+								</th>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
 			<div class="pages" id="page-5">
-				<h2>Contacts</h2>
+				<div id="map-canvas"></div>
+				<div class="contact-container">
+					hrllo
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -207,5 +298,30 @@
 		<script type="text/javascript" src="scripts/main.js"></script>
 		<script src="scripts/classie.js"></script>
 		<script src="scripts/cbpSplitLayout.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+    <script>
+
+		var map;
+		function initialize() {
+			  var mapOptions = {
+			    zoom: 15,
+			    scrollwheel: false,
+			    center: new google.maps.LatLng(48.8374242, 2.3573167)
+			  };
+			  map = new google.maps.Map(document.getElementById('map-canvas'),
+			      mapOptions);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 	</body>
-</html>
+</<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>>

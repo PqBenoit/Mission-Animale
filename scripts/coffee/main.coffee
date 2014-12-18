@@ -18,6 +18,8 @@ missionAnmialeApp.controller 'HeaderCtrl', [ '$scope', ($scope) ->
 				header.fadeIn()
 				header.css('position', 'fixed')
 				$(".background").css("background-image", "url('img/bg-3.jpg')")
+				$('li.current').removeClass('current')
+				$('.navbar-right').find('li').eq('1').addClass('current')
 			else
 				header.fadeOut()
 				$(".background").css("background-image", "url('img/bg-2.jpg')")
@@ -25,18 +27,24 @@ missionAnmialeApp.controller 'HeaderCtrl', [ '$scope', ($scope) ->
 			if y >= 2*x
 				$('#logo').attr('src', 'img/logo-black-blue.png')
 				header.removeClass('black-white').addClass('white')
-
-				return false
+				$('li.current').removeClass('current')
+				$('.navbar-right').find('li').eq('2').addClass('current')
 			else
 				header.removeClass('white').addClass('black-white')
 				$('#logo').attr('src', 'img/logo-black-white.png')				
-				return false
-		
+
+			if y >= 3*x
+				$('li.current').removeClass('current')
+				$('.navbar-right').find('li').eq('3').addClass('current')
+
+			if y >= 4*x
+				$('li.current').removeClass('current')
+				$('.navbar-right').find('li').eq('4').addClass('current')
 
 		$('.scroller').click ->
 			width = x
 			$('html, body').animate {scrollTop:width}, 1000
-			$(target).addClassName('.current')
+			# $(target).addClassName('.current')
 			return false
 
 		$('.accueil').click ->
@@ -49,7 +57,7 @@ missionAnmialeApp.controller 'HeaderCtrl', [ '$scope', ($scope) ->
 			target = $(this).attr('href')
 			width = $(target).offset().top
 			$('html, body').animate {scrollTop:width}, 1000
-			$(target).addClassName('.current')
+			# $(target).addClassName('.current')
 			return false
 
 		$('.paragraphs').hide()
